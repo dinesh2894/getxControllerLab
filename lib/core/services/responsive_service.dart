@@ -35,7 +35,7 @@ class ResponsiveService {
   //padding: The parts of the display that are partially obscured by system UI
   //This Typically used to calculate the hardware display "notches" or the system status bar
   static double deviceTopPadding(BuildContext context) =>
-      MediaQueryData.fromWindow(window).padding.top;
+      MediaQueryData.fromView(window).padding.top;
 
   //Note: This doesn't get Android's bottom system bar as flutter already ignoring it when getting screen size
   //see: https://stackoverflow.com/questions/52954549/get-width-and-height-of-the-device-in-flutter
