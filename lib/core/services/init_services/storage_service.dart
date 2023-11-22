@@ -97,7 +97,10 @@ class StorageService implements IStorageService {
   }
 
   @override
-  Future<dynamic> restoreData({required String key, required DataType dataType}) async {
+  Future<dynamic> restoreData({
+    required String key,
+    required DataType dataType,
+  }) async {
     return await getSharedPrefsMethod(
       restoring: true,
       sharedPrefsMethod: dataType,
