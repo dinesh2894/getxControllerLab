@@ -13,7 +13,7 @@ class ConnectivityService implements IConnectivityService {
   bool _isInitialized = false;
 
   ///
-  bool _isCoonected = true;
+  bool _isConnected = true;
 
   @override
   init() {

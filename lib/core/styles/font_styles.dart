@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:getx_controller/core/styles/sizes.dart';
 
-class FontStyles{
+class FontStyles {
   // static fontFamily(BuildContext context) => tr(context).fontFamily;
 
   static const fontWeightBlack = FontWeight.w900;
@@ -16,11 +16,14 @@ class FontStyles{
   static const fontStyleNormal = FontStyle.normal;
 
   static mapSearchBarFontStyle(BuildContext context) => TextStyle(
-    fontSize: Sizes.fontSizes(context)['h4'],
-    color: Theme.of(context).textTheme.titleMedium!.color,
-    // fontFamily: fontFamily(context),
-    fontWeight: fontWeightNormal,
-    fontStyle: fontStyleNormal,
-  );
+        fontSize: Sizes.fontSizes(context)['h4'],
+        color: Theme.of(context).textTheme.titleMedium!.color,
+        // fontFamily: fontFamily(context),
+        fontWeight: fontWeightNormal,
+        fontStyle: fontStyleNormal,
+      );
+}
+
+class TextStyles{
 
 }

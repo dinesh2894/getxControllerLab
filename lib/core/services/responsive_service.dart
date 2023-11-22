@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class ResponsiveService {
+
   static const Size _designSize = Size(428, 560);
   static const bool _splitScreenMode = false;
 

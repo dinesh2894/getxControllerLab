@@ -10,3 +10,10 @@ extension SizeExtension on num {
 
   double sp(BuildContext context) => ResponsiveService.scaleText(context) * this;
 }
+
+
+extension StringExtension on String{
+  String q(BuildContext context) => this;
+  String r(BuildContext context) => this;
+
+}

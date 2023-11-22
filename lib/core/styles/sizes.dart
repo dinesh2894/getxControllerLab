@@ -26,6 +26,15 @@ class Sizes {
         "h6": 12.0.sp(context),
       };
 
+  static fontSizes1(BuildContext context) {
+    return {
+      "h0": 40.0.sp(context),
+      "h1": 32.0.sp(context),
+      "h2": 24.0.sp(context),
+      "h3": 20.0.sp(context),
+    };
+  }
+
   // Icons sizes
   static iconSizes(BuildContext context) => {
         "s1": 95.r(context),

@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 class AppColors {
 
-  //Main
+  // Main
   static const Color lightThemePrimary = Color(0xFFC11718);
   static const Color darkThemePrimary = Color(0xFFC11718);
   static const Color accentColor = Color(0xFF4b98db);
 
-  //Screen
+  // Screen
   static const Color lightThemeStatusBarColor = Color(0xFFFAFAFA);
   static const Color darkThemeStatusBarColor = Color(0xFF303030);
   static const Color lightThemeScaffoldBGColor = Color(0xFFFAFAFA);
@@ -15,7 +15,7 @@ class AppColors {
   static const Color lightThemeMajorBGColor = Color(0xffffffff);
   static const Color darkThemeMajorBGColor = Color(0xff212327);
 
-  //Text
+  // Text
   static const Color lightThemeBigTextColor = Color(0xff000000);
   static const Color darkThemeBigTextColor = Color(0xfff0f0f0);
   static const Color lightThemeNormalTextColor = Color(0xff000000);
@@ -23,7 +23,7 @@ class AppColors {
   static const Color lightThemeSmallTextColor = Color(0xFF858992);
   static const Color darkThemeSmallTextColor = Color(0xffcccccc);
 
-  //TextField
+  // TextField
   static const Color lightThemeTextFieldFillColor = lightThemeScaffoldBGColor;
   static const Color darkThemeTextFieldFillColor = darkThemeScaffoldBGColor;
   static const Color lightThemeTextFieldTextColor = Color(0xff333333);
