@@ -3,10 +3,12 @@ import 'dart:io';
 
 import 'package:dartz/dartz.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:path_provider/path_provider.dart';
 
 import '../error/exceptions.dart';
 import '../error/failures.dart';
+import '../styles/sizes.dart';
 
 class ImageSelector {
   ImageSelector._();
@@ -26,19 +28,22 @@ class ImageSelector {
     return appDocDir.path;
   }
 
-  Future<Either<Failure, File?>> pickImage(BuildContext context, {
+  Future<Either<Failure, File?>> pickImage(
+    BuildContext context, {
     required bool formCamera,
   }) async {
     try {
-      final _pickedFile = await ImagePicker()
-    .
+      final pickedFile = await ImagePicker().pickImage(
+        source: formCamera ? ImageSource.camera : ImageSource.gallery,
+        maxHeight: Sizes.pickedImageMaxSize(context),
+        maxWidth: Sizes.pickedImageMaxSize(context),
+      );
 
-
-    return Right(_r)
+      return pickedFile != null ? Right(File(pickedFile.path)) : const Right(null);
     } catch (e) {
-    log(e.toString());
-    final _failure = DefaultFailure(message: Exceptions.errorMessage(e));
-    return Left(_failure);
+      log(e.toString());
+      final failure = DefaultFailure(message: Exceptions.errorMessage(e));
+      return Left(failure);
     }
   }
 }
